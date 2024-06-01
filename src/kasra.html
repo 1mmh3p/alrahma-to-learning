@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حركة الكسرة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #b9d1e6;
+            color: #333;
+            direction: rtl;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .letter {
+            font-size: 40px;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+            color: #00fa0c;
+            background-color: #333;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .letter:hover {
+            color: #29db2f;
+            background-color: #ffffff;
+            transform: scale(1.1);
+
+        }
+        .example {
+           
+            font-size: 30px;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+            color: #00fa0c;
+            background-color: #333;
+            width: 100px;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button:hover {
+            background-color: #57d75e;
+        }a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-5deg);
+    background-color: #af8b4c; /* Adjust color as needed */
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>حركة الكسرة</h1>
+        <div class="letter" onclick="speak('ا')">ا</div>
+        <div class="letter" onclick="speak('بِ')">بِ</div>
+        <div class="letter" onclick="speak('تِ')">تِ</div>
+        <div class="letter" onclick="speak('ثِ')">ثِ</div>
+        <div class="letter" onclick="speak('جِ')">جِ</div>
+        <div class="letter" onclick="speak('حِ')">حِ</div>
+        <div class="letter" onclick="speak('خِ')">خِ</div>
+        <div class="letter" onclick="speak('دِ')">دِ</div>
+        <div class="letter" onclick="speak('ذِ')">ذِ</div>
+        <div class="letter" onclick="speak('رِ')">رِ</div>
+        <div class="letter" onclick="speak('زِ')">زِ</div>
+        <div class="letter" onclick="speak('سِ')">سِ</div>
+        <div class="letter" onclick="speak('شِ')">شِ</div>
+        <div class="letter" onclick="speak('صِ')">صِ</div>
+        <div class="letter" onclick="speak('ضِ')">ضِ</div>
+        <div class="letter" onclick="speak('طِ')">طِ</div>
+        <div class="letter" onclick="speak('ظِ')">ظِ</div>
+        <div class="letter" onclick="speak('عِ')">عِ</div>
+        <div class="letter" onclick="speak('غِ')">غِ</div>
+        <div class="letter" onclick="speak('فِ')">فِ</div>
+        <div class="letter" onclick="speak('قِ')">قِ</div>
+        <div class="letter" onclick="speak('كِ')">كِ</div>
+        <div class="letter" onclick="speak('لِ')">لِ</div>
+        <div class="letter" onclick="speak('مِ')">مِ</div>
+        <div class="letter" onclick="speak('نِ')">نِ</div>
+        <div class="letter" onclick="speak('هِ')">هِ</div>
+        <div class="letter" onclick="speak('وِ')">وِ</div>
+        <div class="letter" onclick="speak('يِ')">يِ</div>
+
+        <button class="button" onclick="window.location.href='../kasra/kasra-example.html'">الكلمات على الكسرة</button>
+
+    </div>
+    <a href="../../index.html"> الرجوع الفهرس</a>
+
+    <script>
+        function speak(text) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = text;
+            msg.lang = 'ar-SA';
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+</body>
+</html>

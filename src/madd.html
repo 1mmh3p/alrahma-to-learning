@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أنواع المد</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            direction: rtl;
+            background: #b5d8f9; /* تغيير الخلفية */
+        }
+        .container {
+            margin-top: 50px;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .btnHarket{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .button {
+            --bg: #183403;
+            --hover-bg: #4f693a;
+            --hover-text: #ffffff;
+            color: #4555b3;
+            cursor: pointer;
+            border: 1px solid var(--bg);
+            border-radius: 4px;
+            background: var(--bg);
+            transition: 0.2s;
+            color: rgb(255, 255, 255);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 26px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button:hover {
+            color: var(--hover-text);
+            transform: translate(-0.25rem, -0.25rem);
+            background: var(--hover-bg);
+            box-shadow: 0.25rem 0.25rem var(--bg);
+            transform: scale(1.05);
+        }
+        .button:active {
+            transform: translate(0);
+            box-shadow: none;
+        }
+        h1{
+            background-color: #b6d3ec;
+            border-radius: 10px;
+            width: 150px;
+            height: 38px;
+            text-align: center;
+        }a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-5deg);
+    background-color: #af8b4c; /* Adjust color as needed */
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>أنواع المد</h1>
+    <div class="btnHarket">
+    <button class="button" onclick="window.location.href='./madd_al_badal.html'">1- مد البدل</button>
+    <button class="button" onclick="window.location.href='./madd_al_munfasil.html'">2- مد المنفصل</button>
+    <button class="button" onclick="window.location.href='./madd_al_mutasil.html'">3- مد المتصل</button>
+    <button class="button" onclick="window.location.href='./madd_al_aarid_lil_sukun.html'">4- مد العارض للسكون</button>
+    <button class="button" onclick="window.location.href='./madd_al_tabii.html'">5- مد الطبيعي</button>
+    <button class="button" onclick="window.location.href='./madd_al_iwad.html'">6- مد العوض</button>
+    <button class="button" onclick="window.location.href='./madd_al_jaiz.html'">7- مد الجائز</button>
+</div>
+</div>
+<a href="../../index.html"> الرجوع الفهرس</a>
+</body>
+</html>

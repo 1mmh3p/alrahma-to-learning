@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أمثلة على الكلمات</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+            direction: rtl;   
+            
+        }
+        .example {
+            font-size: 40px;
+            margin: 20px;
+            display: inline-block;
+            cursor: pointer;
+            color: #00fa0c;
+            background-color: #333;
+            width: 100px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+         .example:hover {
+            color: #45a049;
+            transform: scale(1.1);
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button:hover {
+            background-color: #57d75e;
+        }
+        .container{
+            margin: 10% 4% 2% 4%;
+        } a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-5deg);
+    background-color: #af8b4c; /* Adjust color as needed */
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <h2>أمثلة على الكلمات:</h2>
+    <div class="container">
+    <div class="example" onclick="speak('بَيْتٌ')">بَيْتٌ</div>
+    <div class="example" onclick="speak('تَفَاحٌ')">تَفَاحٌ</div>
+    <div class="example" onclick="speak('ثَوْبٌ')">ثَوْبٌ</div>
+    <div class="example" onclick="speak('جَمَلٌ')">جَمَلٌ</div>
+    <div class="example" onclick="speak('حَقْلٌ')">حَقْلٌ</div>
+    <div class="example" onclick="speak('خَرُوفٌ')">خَرُوفٌ</div>
+    <div class="example" onclick="speak('دَفْتَرٌ')">دَفْتَرٌ</div>
+    <div class="example" onclick="speak('ذَهَبٌ')">ذَهَبٌ</div>
+    <div class="example" onclick="speak('رَبِيعٌ')">رَبِيعٌ</div>
+    <div class="example" onclick="speak('زَيْتٌ')">زَيْتٌ</div>
+    <div class="example" onclick="speak('سَفَرٌ')">سَفَرٌ</div>
+    <div class="example" onclick="speak('شَمْسٌ')">شَمْسٌ</div>
+    <div class="example" onclick="speak('صَدِيقٌ')">صَدِيقٌ</div>
+    <div class="example" onclick="speak('ضَوْءٌ')">ضَوْءٌ</div>
+    <div class="example" onclick="speak('طِفْلٌ')">طِفْلٌ</div>
+    <div class="example" onclick="speak('ظَهْرٌ')">ظَهْرٌ</div>
+    <div class="example" onclick="speak('عِلْمٌ')">عِلْمٌ</div>
+    <div class="example" onclick="speak('غَابَةٌ')">غَابَةٌ</div>
+    <div class="example" onclick="speak('فَتَاةٌ')">فَتَاةٌ</div>
+    <div class="example" onclick="speak('قَلْبٌ')">قَلْبٌ</div>
+    <div class="example" onclick="speak('كَلْبٌ')">كَلْبٌ</div>
+    <div class="example" onclick="speak('لَوْنٌ')">لَوْنٌ</div>
+    <div class="example" onclick="speak('مَدْرَسَةٌ')">مَدْرَسَةٌ</div>
+    <div class="example" onclick="speak('نَهَرٌ')">نَهَرٌ</div>
+    <div class="example" onclick="speak('هَوَاءٌ')">هَوَاءٌ</div>
+    <div class="example" onclick="speak('وَرْدَةٌ')">وَرْدَةٌ</div>
+    <div class="example" onclick="speak('قَرَأَ')">قَرَأَ</div>
+    <div class="example" onclick="speak('أَكَلَ')">أَكَلَ</div>
+</div>
+    <button class="button" onclick="window.location.href='../fatha/fatha.html'">حركة الفتحة</button>
+    <a href="../../index.html"> الرجوع الفهرس</a>
+
+    <script>
+        function speak(text) {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = text;
+            msg.lang = 'ar-SA';
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+</body>
+</html>

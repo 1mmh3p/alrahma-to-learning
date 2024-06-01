@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="../image/logo.jpg">
+        <title>حروف </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f5f5f5;
+            font-weight: 900;
+        }
+        h1 {
+            background-color: #af8b4c;
+            color: white;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .letters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .letter {
+            border: 2px dashed red;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            font-size: 24px;
+            position: relative;
+            background-color: #fff;
+        }
+        .letter span {
+            font-size: 12px;
+            background-color: #96dc7c;
+            padding: 0 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+
+        }
+        .safeeq {
+            background-color: #ffd966;
+        }
+        .rakhee {
+            background-color: #d9ead3;
+        }
+        .muthaqal {
+            background-color: #cfe2f3;
+        }
+        .mutasaqi {
+            background-color: #f4cccc;
+        }
+        .mixed {
+            background: linear-gradient(45deg, #ffd966 50%, #cfe2f3 50%);
+        }
+        button{
+            background-color: transparent;
+            border: transparent; 
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-5deg);
+    background-color: #af8b4c; /* Adjust color as needed */
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+    .letter {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    button {
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width: 600px)and  (max-Min: 300px) {
+    .letter {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    button {
+        padding: 5px 10px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>الحروف</h1>
+
+    <div class="letters">
+     <button>  <div class="letter mutasaqi">أ<span>أسد</span></div></button> 
+        <button><div class="letter safeeq">ب<span>بطة</span></div></button>
+        <button><div class="letter safeeq">ت<span>تفاحة</span></div></button>
+        <button><div class="letter safeeq">ث<span>ثعلب</span></div></button>
+        <button><div class="letter rakhee">ج<span>جمل</span></div></button>
+        <button><div class="letter rakhee">ح<span>حصان</span></div></button>
+        <button><div class="letter rakhee">خ<span>خروف</span></div></button>
+        <button><div class="letter rakhee">د<span>دب</span></div></button>
+        <button><div class="letter rakhee">ذ<span>ذئب</span></div></button>
+        <button><div class="letter mutasaqi">ر<span>رمان</span></div></button>
+        <button><div class="letter rakhee">ز<span>زرافة</span></div></button>
+        <button><div class="letter rakhee">س<span>سمكة</span></div></button>
+        <button><div class="letter rakhee">ش<span>شجرة</span></div></button>
+        <button><div class="letter muthaqal">ص<span>صقر</span></div></button>
+        <button><div class="letter muthaqal">ض<span>ضفدع</span></div></button>
+        <button><div class="letter muthaqal">ط<span>طاووس</span></div></button>
+        <button><div class="letter mixed">ظ<span>ظبي</span></div></button>
+        <button><div class="letter rakhee">ع<span>عنب</span></div></button>
+        <button><div class="letter rakhee">غ<span>غزال</span></div></button>
+        <button><div class="letter rakhee">ف<span>فيل</span></div></button>
+        <button><div class="letter rakhee">ق<span>قمر</span></div></button>
+        <button><div class="letter rakhee">ك<span>كتاب</span></div></button>
+        <button><div class="letter rakhee">ل<span>ليمون</span></div></button>
+        <button><div class="letter rakhee">م<span>موز</span></div></button>
+        <button><div class="letter rakhee">ن<span>نمر</span></div></button>
+        <button><div class="letter rakhee">ه<span>هدهد</span></div></button>
+        <button><div class="letter rakhee">و<span>وردة</span></div></button>
+        <button><div class="letter rakhee">ي<span>يقطين</span></div></button>
+    </div>
+    <p>
+     
+        <span style="color: #000; background-color: #ffd966;">أصفر:</span> حروف لثوية<br>
+        <span style="color: #000; background-color: #cfe2f3;">أزرق:</span> حروف تفخيم<br>
+        <span style="color: #000;background-color: #f4cccc;">أحمر:</span> حروف تدور بين التفخيم والترقيق<br>
+        <span style="background: linear-gradient(45deg, #cfe2f3 50%, #ffd966 50%); padding: 2px 5px;">أصفر وأزرق:</span> حروف لثوية ومفخمة
+    </p>
+
+    <a href="../index.html"> الرجوع الفهرس</a>
+</body>
+</html>
